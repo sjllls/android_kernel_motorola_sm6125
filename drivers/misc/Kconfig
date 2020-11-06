@@ -601,6 +601,8 @@ source "drivers/misc/genwqe/Kconfig"
 source "drivers/misc/echo/Kconfig"
 source "drivers/misc/cxl/Kconfig"
 source "drivers/misc/fpr_FingerprintCard/Kconfig"
+source "drivers/misc/mmi_sigprint/Kconfig"
+source "drivers/misc/mmi_sys_temp/Kconfig"
 endmenu
 
 config OKL4_USER_VIPC
@@ -621,13 +623,3 @@ config OKL4_LINK_SHBUF
 	  transport. This driver presents the link to Linux as a character device
 	  which can be written to or read from to access the shared memory. An ioctl
 	  on the device is used to send a virtual interrupt to the partner cell.
-
-#
-# Motorola tracepoint signal tracing drivers
-#
-config MMI_SIGPRINT
-	bool "Motorola tracepoint signal tracing drivers"
-	default y
-	help
-	  Include support for TRACING SIGNAL generated and delivered through
-	  tracepoints.

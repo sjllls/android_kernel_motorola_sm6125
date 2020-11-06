@@ -93,3 +93,5 @@ obj-$(CONFIG_OKL4_GUEST)        += okl4-panic.o
 obj-$(CONFIG_OKL4_LINK_SHBUF)    += okl4-link-shbuf.o
 obj-$(CONFIG_MMI_SIGPRINT)      += mmi_sigprint.o
 obj-$(CONFIG_INPUT_AWINIC_AW8695_HAPTIC) += awinic/aw8695/
+obj-$(CONFIG_MMI_SIGPRINT) += mmi_sigprint/
+obj-$(CONFIG_MMI_SYS_TEMP) += mmi_sys_temp/
