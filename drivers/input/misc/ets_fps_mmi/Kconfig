@@ -1,0 +1,23 @@
+config INPUT_ETS_FPS_MMI
+	bool "Fingerprint EGIS device"
+	default n
+
+config INPUT_EGISTEC_FPS_NAVI
+	bool "EGIS fingerprint navigation"
+	depends on INPUT_ETS_FPS_MMI
+	default y
+
+config INPUT_EGISTEC_FPS_NAVI_HORIZON
+	bool "EGIS fingerprint horizontal navigation"
+	depends on INPUT_EGISTEC_FPS_NAVI
+	default y
+
+config INPUT_EGISTEC_FPS_NAVI_VERTICAL
+	bool "EGIS fingerprint vertical navigation"
+	depends on INPUT_EGISTEC_FPS_NAVI
+	default y
+
+config DISPLAY_SPEED_UP
+	bool "EGIS fingerprint display speed up"
+	depends on INPUT_ETS_FPS_MMI
+	default n
