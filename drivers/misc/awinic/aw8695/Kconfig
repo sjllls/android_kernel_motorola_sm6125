@@ -1,0 +1,4 @@
+config INPUT_AWINIC_AW8695_HAPTIC
+	tristate "Awinic AW8695 haptic driver"
+	depends on I2C
+	default n
