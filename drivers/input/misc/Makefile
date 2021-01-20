@@ -87,3 +87,4 @@ obj-$(CONFIG_INPUT_YEALINK)		+= yealink.o
 obj-$(CONFIG_INPUT_IDEAPAD_SLIDEBAR)	+= ideapad_slidebar.o
 
 obj-$(CONFIG_INPUT_ETS_FPS_MMI)               += ets_fps_mmi/
+obj-$(CONFIG_INPUT_FPC1020_PLATFORM)               += fpc_fps_mmi/

@@ -1,0 +1,1 @@
+obj-$(CONFIG_INPUT_FPC1020_PLATFORM) += fpc1020_tee.o

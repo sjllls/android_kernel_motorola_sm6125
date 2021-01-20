@@ -1,0 +1,8 @@
+config INPUT_FPC1020_PLATFORM
+	bool "Fingerprint FPC1020 device"
+	default n
+
+config INPUT_MISC_FPC1020_SAVE_TO_CLASS_DEVICE
+	bool "FPC1020 SAVE TO CLASS DEVICE"
+	depends on INPUT_FPC1020_PLATFORM
+	default y
