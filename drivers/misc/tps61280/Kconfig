@@ -1,0 +1,3 @@
+config TI_TPS61280
+	bool "Driver for TI,TP61280 DC/DC Boost Converter"
+	default n

@@ -1,0 +1,1 @@
+obj-$(CONFIG_TI_TPS61280) 	+= tps61280.o
